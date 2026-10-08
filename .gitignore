@@ -1,0 +1,21 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.log
+
+# Local model files
+*.bin
+*.safetensors
+*.onnx
+
+# Local model directories
+nllb-1.3b-en-ml-ct2/
+merged_hf/
+onnx/
+ctranslate2_int8/
+adapter/
+
+# Backup files
+app_onnx_backup.py

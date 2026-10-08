@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f7f9ff"><title>Malayalam Translation Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Malayalam:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<div class="ambient" aria-hidden="true"><div class="wave wave-one"></div><div class="wave wave-two"></div><div class="wave wave-three"></div><div class="glyph-field" id="glyphField"></div><div class="ambient-dot dot-a"></div><div class="ambient-dot dot-b"></div><div class="ambient-dot dot-c"></div></div>
+<header class="topbar"><div class="brand"><div class="brand-mark">അ</div><span>Malayalam <strong>Translation Lab</strong></span></div><button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode"><span>☼</span><span class="theme-track"><span class="theme-thumb"></span></span><span>◐</span></button></header>
+<main class="page">
+<section class="hero"><div class="eyebrow">NEURAL TRANSLATION</div><h1>Malayalam <span>Translation Lab</span></h1><p>Translate English to Malayalam with a neural machine translation model.</p><div class="hero-line"></div></section>
+<section class="translator-card" aria-label="Translation workspace">
+<div class="translator-toolbar"><div class="language-pair"><div class="language-select"><span class="lang-badge english">EN</span><span>English</span></div><span class="direction-arrow" aria-hidden="true">→</span><div class="language-select"><span class="lang-badge malayalam">ML</span><span>Malayalam</span></div></div><div class="decoding-control"><label for="beamSize">Beam Search</label><select id="beamSize"><option value="1">1 · Fast</option><option value="2">2 · Quick</option><option value="4" selected>4 · Balanced</option><option value="6">6 · Quality</option><option value="8">8 · High</option></select></div></div>
+<div class="translation-grid">
+<article class="text-panel"><div class="panel-heading"><span>SOURCE TEXT</span><button id="clearBtn" class="text-action" type="button">⌫ &nbsp;Clear</button></div><textarea id="sourceText" maxlength="5000" placeholder="Type or paste English text here..." spellcheck="true"></textarea><div class="panel-footer"><span id="charCount">0 / 5000 characters</span><span>English</span></div></article>
+
+<article class="text-panel output-panel"><div class="panel-heading"><span>MALAYALAM TRANSLATION</span><button id="copyBtn" class="text-action" type="button" disabled>▢ &nbsp;Copy</button></div><div id="translationOutput" class="output-area" aria-live="polite"><span class="placeholder">Malayalam translation will appear here...</span></div><div class="panel-footer"><span id="inferenceStats"></span><span id="statusText">Ready</span></div></article>
+</div><div class="action-row"><button id="translateBtn" class="translate-button" type="button"><span>Translate</span><span>→</span></button></div>
+</section>
+<p class="micro-copy">Bridging languages. Enabling understanding.</p>
+</main><footer>© 2026 Malayalam Translation Lab. All rights reserved.</footer>
+<script src="/static/app.js"></script>
+</body></html>
